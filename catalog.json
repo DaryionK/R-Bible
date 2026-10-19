@@ -1,0 +1,3502 @@
+[
+  {
+    "name": "c",
+    "category": "Basics",
+    "description": "Combine values into a vector.",
+    "code": "help(\"c\")\nexample(\"c\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "c(...): values to combine · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "length",
+    "category": "Basics",
+    "description": "Count elements in a vector or list.",
+    "code": "help(\"length\")\nexample(\"length\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "length(x): x is a vector or list · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "seq",
+    "category": "Basics",
+    "description": "Generate a sequence of values.",
+    "code": "help(\"seq\")\nexample(\"seq\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "from: starting value · to: end · by: step · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rep",
+    "category": "Basics",
+    "description": "Repeat values a chosen number of times.",
+    "code": "help(\"rep\")\nexample(\"rep\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "x: values · times: repetition count · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "colon",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "3:7",
+    "output": "[1] 3 4 5 6 7",
+    "params": "from:to generates an integer sequence",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "print",
+    "category": "Basics",
+    "description": "Display an R object.",
+    "code": "print(c(2, 4, 6))",
+    "output": "[1] 2 4 6",
+    "params": "print(x, ...): x is the object to display",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cat",
+    "category": "Basics",
+    "description": "Print text or values without R-style index labels.",
+    "code": "cat(\"Hello\", \"R\", sep = \" \")",
+    "output": "Hello R",
+    "params": "...: values · sep: separator · file: destination",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "paste",
+    "category": "Basics",
+    "description": "Join text with a separator.",
+    "code": "paste(\"R\", \"Bible\", sep = \" \")",
+    "output": "[1] \"R Bible\"",
+    "params": "...: values · sep: separator",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "paste0",
+    "category": "Basics",
+    "description": "Join text with no separator.",
+    "code": "help(\"paste0\")\nexample(\"paste0\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "...: pieces · collapse: join results · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "sprintf",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "sprintf(\"Score: %.1f\", 92.35)",
+    "output": "[1] \"Score: 92.3\"",
+    "params": "fmt: format string · ...: values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "format",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "format(1234.5, big.mark = \",\", scientific = FALSE)",
+    "output": "[1] \"1,234.5\"",
+    "params": "x: input · big.mark: thousands separator",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "typeof",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "typeof(1:3)",
+    "output": "[1] \"integer\"",
+    "params": "x: object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "class",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "class(c(1, 2, 3))",
+    "output": "[1] \"numeric\"",
+    "params": "x: object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "mode",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "mode(c(1, 2))",
+    "output": "[1] \"numeric\"",
+    "params": "x: object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "str",
+    "category": "Basics",
+    "description": "Show the structure and types inside an object.",
+    "code": "help(\"str\")\nexample(\"str\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?str in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "summary",
+    "category": "Basics",
+    "description": "Get a compact summary of an object.",
+    "code": "help(\"summary\")\nexample(\"summary\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?summary in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "head",
+    "category": "Basics",
+    "description": "Show the first entries.",
+    "code": "head(1:10, 4)",
+    "output": "[1] 1 2 3 4",
+    "params": "x: object · n: number of items",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "tail",
+    "category": "Basics",
+    "description": "Show the last entries.",
+    "code": "tail(1:10, 3)",
+    "output": "[1]  8  9 10",
+    "params": "x: object · n: number of items",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "names",
+    "category": "Basics",
+    "description": "Read or set element names.",
+    "code": "names(list(age = 20, city = \"Miami\"))",
+    "output": "[1] \"age\" \"city\"",
+    "params": "x: object with named elements",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "setNames",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "setNames(c(10, 20), c(\"a\", \"b\"))",
+    "output": " a  b\n10 20",
+    "params": "object: values · nm: names",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "unname",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "unname(c(a = 10, b = 20))",
+    "output": "[1] 10 20",
+    "params": "obj: named object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "attributes",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "attributes(matrix(1:4, 2))",
+    "output": "$dim\n[1] 2 2",
+    "params": "obj: object whose attributes to inspect",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "attr",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "attr(matrix(1:4, 2), \"dim\")",
+    "output": "[1] 2 2",
+    "params": "x: object · which: attribute name",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "structure",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"structure\")\nexample(\"structure\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?structure in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "is.na",
+    "category": "Basics",
+    "description": "Identify missing values.",
+    "code": "is.na(c(2, NA, 4))",
+    "output": "[1] FALSE  TRUE FALSE",
+    "params": "x: vector or other R object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "anyNA",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "anyNA(c(2, NA, 4))",
+    "output": "[1] TRUE",
+    "params": "x: vector or other R object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "complete.cases",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "complete.cases(data.frame(a=c(1, NA), b=c(3, 4)))",
+    "output": "[1]  TRUE FALSE",
+    "params": "...: vectors, matrices or data frames",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "unique",
+    "category": "Basics",
+    "description": "Keep unique values.",
+    "code": "unique(c(2, 2, 5, 5, 7))",
+    "output": "[1] 2 5 7",
+    "params": "x: vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "duplicated",
+    "category": "Basics",
+    "description": "Mark repeated values after the first occurrence.",
+    "code": "duplicated(c(\"a\", \"b\", \"a\"))",
+    "output": "[1] FALSE FALSE  TRUE",
+    "params": "x: vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "match",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "match(c(\"b\", \"a\"), c(\"a\", \"b\", \"c\"))",
+    "output": "[1] 2 1",
+    "params": "x: sought values · table: reference values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "which",
+    "category": "Basics",
+    "description": "Return positions where a logical condition is TRUE.",
+    "code": "which(c(FALSE, TRUE, FALSE, TRUE))",
+    "output": "[1] 2 4",
+    "params": "x: logical vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "which.max",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "which.max(c(4, 9, 2))",
+    "output": "[1] 2",
+    "params": "x: numeric or logical vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "which.min",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "which.min(c(4, 9, 2))",
+    "output": "[1] 3",
+    "params": "x: numeric or logical vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "order",
+    "category": "Basics",
+    "description": "Return positions that would sort values.",
+    "code": "order(c(8, 3, 5))",
+    "output": "[1] 2 3 1",
+    "params": "...: values to sort by · decreasing: descending order",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sort",
+    "category": "Basics",
+    "description": "Sort values.",
+    "code": "sort(c(8, 3, 5))",
+    "output": "[1] 3 5 8",
+    "params": "x: vector · decreasing: descending order",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "rank",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"rank\")\nexample(\"rank\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?rank in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rev",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "rev(1:4)",
+    "output": "[1] 4 3 2 1",
+    "params": "x: vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sample",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "sample(1:5, size = 5, replace = FALSE)",
+    "output": "Random permutation of 1, 2, 3, 4, 5",
+    "params": "x: values · size: number to sample · replace: reuse values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sample.int",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"sample.int\")\nexample(\"sample.int\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?sample.int in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "set.seed",
+    "category": "Basics",
+    "description": "Make random-number generation reproducible.",
+    "code": "set.seed(42)\nsample(1:5, 2)",
+    "output": "Reproducible random sample (depends on R version)",
+    "params": "seed: integer used to initialize random generator",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "identical",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"identical\")\nexample(\"identical\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?identical in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "all.equal",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"all.equal\")\nexample(\"all.equal\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?all.equal in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "isTRUE",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"isTRUE\")\nexample(\"isTRUE\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?isTRUE in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "invisible",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"invisible\")\nexample(\"invisible\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?invisible in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rm",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"rm\")\nexample(\"rm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?rm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "ls",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"ls\")\nexample(\"ls\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?ls in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "exists",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"exists\")\nexample(\"exists\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?exists in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "get",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"get\")\nexample(\"get\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?get in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "assign",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"assign\")\nexample(\"assign\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?assign in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "help",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"mean\")",
+    "output": "# Opens the R documentation for mean",
+    "params": "topic: function or help topic",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "args",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "args(mean)",
+    "output": "# Shows mean function arguments",
+    "params": "name: function",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "example",
+    "category": "Basics",
+    "description": "R function or tool used in basics. Open its R help page for exact behavior and arguments.",
+    "code": "example(\"mean\")",
+    "output": "# Runs the examples in mean documentation",
+    "params": "topic: function name",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sum",
+    "category": "Numbers & math",
+    "description": "Add values.",
+    "code": "sum(c(3, 4, 5))",
+    "output": "[1] 12",
+    "params": "...: values · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "prod",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "prod(c(2, 3, 4))",
+    "output": "[1] 24",
+    "params": "...: values · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "mean",
+    "category": "Numbers & math",
+    "description": "Calculate arithmetic average.",
+    "code": "mean(c(4, 6, 8))",
+    "output": "[1] 6",
+    "params": "x: numeric vector · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "median",
+    "category": "Numbers & math",
+    "description": "Find the middle value.",
+    "code": "median(c(2, 9, 4))",
+    "output": "[1] 4",
+    "params": "x: numeric vector · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "min",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "min(c(4, 9, 2))",
+    "output": "[1] 2",
+    "params": "...: values · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "max",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "max(c(4, 9, 2))",
+    "output": "[1] 9",
+    "params": "...: values · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "range",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "range(c(4, 9, 2))",
+    "output": "[1] 2 9",
+    "params": "...: values · na.rm: ignore missing values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "diff",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "diff(c(3, 8, 10))",
+    "output": "[1] 5 2",
+    "params": "x: vector · lag: spacing",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cumsum",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "cumsum(c(2, 3, 4))",
+    "output": "[1] 2 5 9",
+    "params": "x: numeric vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cumprod",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "cumprod(c(2, 3, 4))",
+    "output": "[1]  2  6 24",
+    "params": "x: numeric vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cummax",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"cummax\")\nexample(\"cummax\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?cummax in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "cummin",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"cummin\")\nexample(\"cummin\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?cummin in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "abs",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "abs(-12)",
+    "output": "[1] 12",
+    "params": "x: number",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sqrt",
+    "category": "Numbers & math",
+    "description": "Calculate square roots.",
+    "code": "sqrt(81)",
+    "output": "[1] 9",
+    "params": "x: nonnegative number",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "exp",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "exp(0)",
+    "output": "[1] 1",
+    "params": "x: numeric input",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "log",
+    "category": "Numbers & math",
+    "description": "Calculate logarithms.",
+    "code": "log(100, base = 10)",
+    "output": "[1] 2",
+    "params": "x: positive number · base: logarithm base",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "log10",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"log10\")\nexample(\"log10\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?log10 in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "log2",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"log2\")\nexample(\"log2\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?log2 in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "round",
+    "category": "Numbers & math",
+    "description": "Round numbers to a chosen number of digits.",
+    "code": "round(3.14159, digits = 2)",
+    "output": "[1] 3.14",
+    "params": "x: number · digits: decimal places",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "signif",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"signif\")\nexample(\"signif\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?signif in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "floor",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "floor(2.9)",
+    "output": "[1] 2",
+    "params": "x: number",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "ceiling",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "ceiling(2.3)",
+    "output": "[1] 3",
+    "params": "x: number",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "trunc",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"trunc\")\nexample(\"trunc\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?trunc in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "%%",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"%%\")\nexample(\"%%\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?%% in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "%/%",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"%/%\")\nexample(\"%/%\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?%/% in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "^",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"^\")\nexample(\"^\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?^ in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pmin",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pmin\")\nexample(\"pmin\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pmin in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pmax",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pmax\")\nexample(\"pmax\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pmax in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "scale",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"scale\")\nexample(\"scale\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?scale in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "sweep",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"sweep\")\nexample(\"sweep\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?sweep in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "outer",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"outer\")\nexample(\"outer\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?outer in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "crossprod",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"crossprod\")\nexample(\"crossprod\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?crossprod in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "tcrossprod",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"tcrossprod\")\nexample(\"tcrossprod\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?tcrossprod in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "factorial",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "factorial(5)",
+    "output": "[1] 120",
+    "params": "x: nonnegative integer",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "choose",
+    "category": "Numbers & math",
+    "description": "R function or tool used in numbers & math. Open its R help page for exact behavior and arguments.",
+    "code": "choose(5, 2)",
+    "output": "[1] 10",
+    "params": "n: total items · k: items selected",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "nchar",
+    "category": "Text",
+    "description": "Count characters in strings.",
+    "code": "nchar(\"R Bible\")",
+    "output": "[1] 7",
+    "params": "x: text",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "substr",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "substr(\"programming\", 1, 7)",
+    "output": "[1] \"program\"",
+    "params": "x: text · start: first character · stop: last character",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "substring",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"substring\")\nexample(\"substring\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?substring in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "strsplit",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "strsplit(\"a,b,c\", \",\")",
+    "output": "[[1]]\n[1] \"a\" \"b\" \"c\"",
+    "params": "x: text · split: separator",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "grep",
+    "category": "Text",
+    "description": "Find matching positions using a pattern.",
+    "code": "help(\"grep\")\nexample(\"grep\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?grep in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "grepl",
+    "category": "Text",
+    "description": "Test whether each string matches a pattern.",
+    "code": "grepl(\"R\", c(\"R Bible\", \"Python\"))",
+    "output": "[1]  TRUE FALSE",
+    "params": "pattern: search pattern · x: text",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sub",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "sub(\"cat\", \"dog\", \"cat cat\")",
+    "output": "[1] \"dog cat\"",
+    "params": "pattern: regex · replacement: new text · x: input",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "gsub",
+    "category": "Text",
+    "description": "Replace every matching substring.",
+    "code": "gsub(\"cat\", \"dog\", \"cat cat\")",
+    "output": "[1] \"dog dog\"",
+    "params": "pattern: regex · replacement: new text · x: input",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "tolower",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"tolower\")\nexample(\"tolower\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?tolower in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "toupper",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "toupper(\"hello\")",
+    "output": "[1] \"HELLO\"",
+    "params": "x: text",
+    "verified": true,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "trimws",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"trimws\")\nexample(\"trimws\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?trimws in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "startsWith",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"startsWith\")\nexample(\"startsWith\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?startsWith in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "endsWith",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"endsWith\")\nexample(\"endsWith\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?endsWith in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "chartr",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"chartr\")\nexample(\"chartr\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?chartr in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "encodeString",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"encodeString\")\nexample(\"encodeString\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?encodeString in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "nzchar",
+    "category": "Text",
+    "description": "R function or tool used in text. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"nzchar\")\nexample(\"nzchar\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?nzchar in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "vector",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"vector\")\nexample(\"vector\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?vector in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "numeric",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"numeric\")\nexample(\"numeric\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?numeric in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "integer",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"integer\")\nexample(\"integer\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?integer in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "character",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"character\")\nexample(\"character\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?character in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "logical",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"logical\")\nexample(\"logical\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?logical in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "complex",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"complex\")\nexample(\"complex\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?complex in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "raw",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"raw\")\nexample(\"raw\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?raw in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "factor",
+    "category": "Vectors & factors",
+    "description": "Represent categorical data with levels.",
+    "code": "factor(c(\"red\", \"blue\", \"red\"))",
+    "output": "[1] red  blue red \nLevels: blue red",
+    "params": "x: category values · levels: allowed categories",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "ordered",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"ordered\")\nexample(\"ordered\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?ordered in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "levels",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "levels(factor(c(\"red\", \"blue\")))",
+    "output": "[1] \"blue\" \"red\"",
+    "params": "x: factor",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "nlevels",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"nlevels\")\nexample(\"nlevels\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?nlevels in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "as.factor",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.factor\")\nexample(\"as.factor\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.factor in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "as.character",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "as.character(c(2, 5))",
+    "output": "[1] \"2\" \"5\"",
+    "params": "x: object",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "as.numeric",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "as.numeric(c(\"2\", \"5\"))",
+    "output": "[1] 2 5",
+    "params": "x: convertible values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "as.integer",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "as.integer(c(2.8, 5.2))",
+    "output": "[1] 2 5",
+    "params": "x: numeric values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "as.logical",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "as.logical(c(0, 1))",
+    "output": "[1] FALSE  TRUE",
+    "params": "x: values",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "as.Date",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.Date\")\nexample(\"as.Date\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.Date in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "cut",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"cut\")\nexample(\"cut\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?cut in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "table",
+    "category": "Vectors & factors",
+    "description": "Count occurrences of categorical values.",
+    "code": "help(\"table\")\nexample(\"table\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "...: categorical variables · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "prop.table",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"prop.table\")\nexample(\"prop.table\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?prop.table in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "addmargins",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"addmargins\")\nexample(\"addmargins\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?addmargins in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "droplevels",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"droplevels\")\nexample(\"droplevels\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?droplevels in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "interaction",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"interaction\")\nexample(\"interaction\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?interaction in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "gl",
+    "category": "Vectors & factors",
+    "description": "R function or tool used in vectors & factors. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"gl\")\nexample(\"gl\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?gl in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "list",
+    "category": "Lists & tables",
+    "description": "Store objects of different types together.",
+    "code": "list(name = \"Alex\", age = 20)",
+    "output": "$name\n[1] \"Alex\"\n\n$age\n[1] 20",
+    "params": "...: elements; each can have a name",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "unlist",
+    "category": "Lists & tables",
+    "description": "Flatten list components into a vector when possible.",
+    "code": "unlist(list(a = 2, b = 5), use.names = FALSE)",
+    "output": "[1] 2 5",
+    "params": "x: list · use.names: retain names",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "append",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"append\")\nexample(\"append\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?append in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "as.list",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.list\")\nexample(\"as.list\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.list in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "data.frame",
+    "category": "Lists & tables",
+    "description": "Create a table of equal-length columns.",
+    "code": "data.frame(name = c(\"A\", \"B\"), score = c(8, 9))",
+    "output": "  name score\n1    A     8\n2    B     9",
+    "params": "...: columns of equal length",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "as.data.frame",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.data.frame\")\nexample(\"as.data.frame\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.data.frame in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "tibble",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"tibble\")\nexample(\"tibble\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?tibble in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "transform",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"transform\")\nexample(\"transform\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?transform in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "within",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"within\")\nexample(\"within\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?within in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "subset",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"subset\")\nexample(\"subset\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?subset in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "merge",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"merge\")\nexample(\"merge\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?merge in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rbind",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "rbind(c(1, 2), c(3, 4))",
+    "output": "     [,1] [,2]\n[1,]    1    2\n[2,]    3    4",
+    "params": "...: rows or matrices",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cbind",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "cbind(c(1, 2), c(3, 4))",
+    "output": "     [,1] [,2]\n[1,]    1    3\n[2,]    2    4",
+    "params": "...: columns or matrices",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "expand.grid",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"expand.grid\")\nexample(\"expand.grid\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?expand.grid in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "aggregate",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"aggregate\")\nexample(\"aggregate\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?aggregate in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "reshape",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"reshape\")\nexample(\"reshape\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?reshape in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "stack",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"stack\")\nexample(\"stack\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?stack in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "unstack",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"unstack\")\nexample(\"unstack\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?unstack in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "split",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"split\")\nexample(\"split\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?split in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "unsplit",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"unsplit\")\nexample(\"unsplit\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?unsplit in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "with",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"with\")\nexample(\"with\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?with in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "attach",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"attach\")\nexample(\"attach\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?attach in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "detach",
+    "category": "Lists & tables",
+    "description": "R function or tool used in lists & tables. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"detach\")\nexample(\"detach\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?detach in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "matrix",
+    "category": "Matrices & arrays",
+    "description": "Create a two-dimensional atomic array.",
+    "code": "matrix(1:6, nrow = 2, byrow = TRUE)",
+    "output": "     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6",
+    "params": "data: values · nrow: rows · ncol: columns · byrow: fill across rows",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "array",
+    "category": "Matrices & arrays",
+    "description": "Create a multidimensional atomic array.",
+    "code": "array(1:8, dim = c(2, 2, 2))",
+    "output": ", , 1\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\n, , 2\n\n     [,1] [,2]\n[1,]    5    7\n[2,]    6    8",
+    "params": "data: values · dim: dimensions",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "dim",
+    "category": "Matrices & arrays",
+    "description": "Read or assign dimensions.",
+    "code": "dim(matrix(1:6, nrow = 2))",
+    "output": "[1] 2 3",
+    "params": "x: matrix, array or data frame",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "dimnames",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"dimnames\")\nexample(\"dimnames\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?dimnames in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rownames",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "rownames(matrix(1:4, 2))",
+    "output": "NULL",
+    "params": "x: matrix or data frame",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "colnames",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"colnames\")\nexample(\"colnames\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?colnames in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "nrow",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "nrow(matrix(1:6, nrow = 2))",
+    "output": "[1] 2",
+    "params": "x: matrix or data frame",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "ncol",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "ncol(matrix(1:6, nrow = 2))",
+    "output": "[1] 3",
+    "params": "x: matrix or data frame",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "t",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"t\")\nexample(\"t\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?t in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "diag",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"diag\")\nexample(\"diag\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?diag in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "solve",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"solve\")\nexample(\"solve\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?solve in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "det",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"det\")\nexample(\"det\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?det in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "eigen",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"eigen\")\nexample(\"eigen\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?eigen in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "svd",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"svd\")\nexample(\"svd\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?svd in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "qr",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"qr\")\nexample(\"qr\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?qr in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rowSums",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "rowSums(matrix(1:6, nrow = 2))",
+    "output": "[1]  9 12",
+    "params": "x: numeric matrix · na.rm: ignore missing",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "colSums",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "colSums(matrix(1:6, nrow = 2))",
+    "output": "[1]  3  7 11",
+    "params": "x: numeric matrix · na.rm: ignore missing",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "rowMeans",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "rowMeans(matrix(1:6, nrow = 2))",
+    "output": "[1] 3 4",
+    "params": "x: numeric matrix",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "colMeans",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "colMeans(matrix(1:6, nrow = 2))",
+    "output": "[1] 1.5 3.5 5.5",
+    "params": "x: numeric matrix",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "apply",
+    "category": "Matrices & arrays",
+    "description": "Apply a function over margins of an array or matrix.",
+    "code": "apply(matrix(1:6, nrow = 2), 2, sum)",
+    "output": "[1]  3  7 11",
+    "params": "X: matrix/array · MARGIN: 1 rows, 2 columns · FUN: function",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "aperm",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"aperm\")\nexample(\"aperm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?aperm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "drop",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"drop\")\nexample(\"drop\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?drop in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "kronecker",
+    "category": "Matrices & arrays",
+    "description": "R function or tool used in matrices & arrays. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"kronecker\")\nexample(\"kronecker\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?kronecker in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "ifelse",
+    "category": "Conditions & iteration",
+    "description": "Choose values element-by-element based on a logical test.",
+    "code": "ifelse(c(2, 7, 4) > 5, \"high\", \"low\")",
+    "output": "[1] \"low\"  \"high\" \"low\"",
+    "params": "test: condition · yes: if true · no: if false",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "if",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"if\")\nexample(\"if\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?if in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "while",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"while\")\nexample(\"while\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?while in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "repeat",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"repeat\")\nexample(\"repeat\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?repeat in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "for",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"for\")\nexample(\"for\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?for in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "break",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"break\")\nexample(\"break\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?break in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "next",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"next\")\nexample(\"next\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?next in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "switch",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"switch\")\nexample(\"switch\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?switch in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "stop",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"stop\")\nexample(\"stop\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?stop in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "warning",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"warning\")\nexample(\"warning\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?warning in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "message",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"message\")\nexample(\"message\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?message in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "try",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"try\")\nexample(\"try\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?try in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "tryCatch",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"tryCatch\")\nexample(\"tryCatch\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?tryCatch in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "stopifnot",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "stopifnot(2 + 2 == 4)",
+    "output": "# No output if the condition passes",
+    "params": "...: logical conditions to check",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "lapply",
+    "category": "Conditions & iteration",
+    "description": "Apply a function to each list element; return a list.",
+    "code": "lapply(list(1:3, 4:5), sum)",
+    "output": "[[1]]\n[1] 6\n\n[[2]]\n[1] 9",
+    "params": "X: list · FUN: function; returns a list",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "sapply",
+    "category": "Conditions & iteration",
+    "description": "Simplify lapply output when possible.",
+    "code": "sapply(list(1:3, 4:5), sum)",
+    "output": "[1] 6 9",
+    "params": "X: list · FUN: function; simplifies when possible",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "vapply",
+    "category": "Conditions & iteration",
+    "description": "Apply a function with a declared output type.",
+    "code": "vapply(list(1:3, 4:5), sum, numeric(1))",
+    "output": "[1] 6 9",
+    "params": "X: list · FUN: function · FUN.VALUE: required result shape",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "tapply",
+    "category": "Conditions & iteration",
+    "description": "Apply a function to groups of values.",
+    "code": "help(\"tapply\")\nexample(\"tapply\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?tapply in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "mapply",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"mapply\")\nexample(\"mapply\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?mapply in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Map",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Map\")\nexample(\"Map\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Map in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Reduce",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Reduce\")\nexample(\"Reduce\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Reduce in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Filter",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Filter\")\nexample(\"Filter\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Filter in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Find",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Find\")\nexample(\"Find\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Find in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Position",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Position\")\nexample(\"Position\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Position in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "replicate",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"replicate\")\nexample(\"replicate\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?replicate in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "do.call",
+    "category": "Conditions & iteration",
+    "description": "R function or tool used in conditions & iteration. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"do.call\")\nexample(\"do.call\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?do.call in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "read.csv",
+    "category": "Data import & export",
+    "description": "Read comma-separated data into a data frame.",
+    "code": "help(\"read.csv\")\nexample(\"read.csv\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?read.csv in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "read.csv2",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"read.csv2\")\nexample(\"read.csv2\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?read.csv2 in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "read.table",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"read.table\")\nexample(\"read.table\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?read.table in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "read.delim",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"read.delim\")\nexample(\"read.delim\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?read.delim in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "readRDS",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"readRDS\")\nexample(\"readRDS\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?readRDS in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "saveRDS",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"saveRDS\")\nexample(\"saveRDS\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?saveRDS in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "load",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"load\")\nexample(\"load\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?load in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "save",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"save\")\nexample(\"save\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?save in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "write.csv",
+    "category": "Data import & export",
+    "description": "Write tabular data to a CSV file.",
+    "code": "help(\"write.csv\")\nexample(\"write.csv\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?write.csv in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "write.table",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"write.table\")\nexample(\"write.table\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?write.table in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "scan",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"scan\")\nexample(\"scan\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?scan in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "file.exists",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"file.exists\")\nexample(\"file.exists\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?file.exists in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "dir",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"dir\")\nexample(\"dir\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?dir in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "list.files",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"list.files\")\nexample(\"list.files\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?list.files in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "getwd",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "getwd()",
+    "output": "# Prints your current working directory",
+    "params": "No arguments",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "setwd",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"setwd\")\nexample(\"setwd\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?setwd in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "basename",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"basename\")\nexample(\"basename\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?basename in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "dirname",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"dirname\")\nexample(\"dirname\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?dirname in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "file.path",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"file.path\")\nexample(\"file.path\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?file.path in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "normalizePath",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"normalizePath\")\nexample(\"normalizePath\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?normalizePath in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "readLines",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"readLines\")\nexample(\"readLines\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?readLines in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "writeLines",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"writeLines\")\nexample(\"writeLines\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?writeLines in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "download.file",
+    "category": "Data import & export",
+    "description": "R function or tool used in data import & export. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"download.file\")\nexample(\"download.file\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?download.file in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "sd",
+    "category": "Statistics",
+    "description": "Calculate sample standard deviation.",
+    "code": "sd(c(1, 2, 3))",
+    "output": "[1] 1",
+    "params": "x: numeric vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "var",
+    "category": "Statistics",
+    "description": "Calculate sample variance.",
+    "code": "var(c(1, 2, 3))",
+    "output": "[1] 1",
+    "params": "x: numeric vector",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cor",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "cor(c(1, 2, 3), c(2, 4, 6))",
+    "output": "[1] 1",
+    "params": "x, y: numeric vectors",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "cov",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "cov(c(1, 2, 3), c(2, 4, 6))",
+    "output": "[1] 2",
+    "params": "x, y: numeric vectors",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "quantile",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "quantile(c(1, 2, 3, 4, 5), probs = 0.5)",
+    "output": "50% \n  3",
+    "params": "x: numeric values · probs: probabilities",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "IQR",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"IQR\")\nexample(\"IQR\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?IQR in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "mad",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"mad\")\nexample(\"mad\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?mad in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "fivenum",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"fivenum\")\nexample(\"fivenum\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?fivenum in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "weighted.mean",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"weighted.mean\")\nexample(\"weighted.mean\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?weighted.mean in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "t.test",
+    "category": "Statistics",
+    "description": "Perform a t-test.",
+    "code": "help(\"t.test\")\nexample(\"t.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?t.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "wilcox.test",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"wilcox.test\")\nexample(\"wilcox.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?wilcox.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "chisq.test",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"chisq.test\")\nexample(\"chisq.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?chisq.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "fisher.test",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"fisher.test\")\nexample(\"fisher.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?fisher.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "aov",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"aov\")\nexample(\"aov\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?aov in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "anova",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"anova\")\nexample(\"anova\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?anova in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "lm",
+    "category": "Statistics",
+    "description": "Fit a linear model.",
+    "code": "help(\"lm\")\nexample(\"lm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?lm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "glm",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"glm\")\nexample(\"glm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?glm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "predict",
+    "category": "Statistics",
+    "description": "Generate predictions from a fitted model.",
+    "code": "help(\"predict\")\nexample(\"predict\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?predict in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "residuals",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"residuals\")\nexample(\"residuals\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?residuals in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "fitted",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"fitted\")\nexample(\"fitted\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?fitted in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "coef",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"coef\")\nexample(\"coef\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?coef in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "confint",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"confint\")\nexample(\"confint\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?confint in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "p.value",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"p.value\")\nexample(\"p.value\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?p.value in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pnorm",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pnorm\")\nexample(\"pnorm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pnorm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "qnorm",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"qnorm\")\nexample(\"qnorm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?qnorm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "dnorm",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"dnorm\")\nexample(\"dnorm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?dnorm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rnorm",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"rnorm\")\nexample(\"rnorm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?rnorm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "runif",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"runif\")\nexample(\"runif\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?runif in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "dbinom",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"dbinom\")\nexample(\"dbinom\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?dbinom in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pbinom",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pbinom\")\nexample(\"pbinom\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pbinom in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "qbinom",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"qbinom\")\nexample(\"qbinom\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?qbinom in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "rbinom",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"rbinom\")\nexample(\"rbinom\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?rbinom in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "hist",
+    "category": "Statistics",
+    "description": "Draw a histogram.",
+    "code": "help(\"hist\")\nexample(\"hist\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "x: numeric values · breaks: bin boundaries · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "density",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"density\")\nexample(\"density\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?density in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "ecdf",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"ecdf\")\nexample(\"ecdf\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?ecdf in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "cor.test",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"cor.test\")\nexample(\"cor.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?cor.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "shapiro.test",
+    "category": "Statistics",
+    "description": "R function or tool used in statistics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"shapiro.test\")\nexample(\"shapiro.test\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?shapiro.test in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "plot",
+    "category": "Charts & graphics",
+    "description": "Create a basic R plot.",
+    "code": "help(\"plot\")\nexample(\"plot\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "x, y: plotted values · type: display type · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "points",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"points\")\nexample(\"points\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?points in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "lines",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"lines\")\nexample(\"lines\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?lines in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "abline",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"abline\")\nexample(\"abline\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?abline in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "legend",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"legend\")\nexample(\"legend\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?legend in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "title",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"title\")\nexample(\"title\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?title in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "axis",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"axis\")\nexample(\"axis\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?axis in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "par",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"par\")\nexample(\"par\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?par in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "barplot",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"barplot\")\nexample(\"barplot\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?barplot in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "boxplot",
+    "category": "Charts & graphics",
+    "description": "Draw a box-and-whisker plot.",
+    "code": "help(\"boxplot\")\nexample(\"boxplot\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?boxplot in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pie",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pie\")\nexample(\"pie\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pie in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pairs",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"pairs\")\nexample(\"pairs\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pairs in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "curve",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"curve\")\nexample(\"curve\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?curve in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "qqnorm",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"qqnorm\")\nexample(\"qqnorm\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?qqnorm in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "qqline",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"qqline\")\nexample(\"qqline\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?qqline in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "image",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"image\")\nexample(\"image\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?image in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "heatmap",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"heatmap\")\nexample(\"heatmap\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?heatmap in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "persp",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"persp\")\nexample(\"persp\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?persp in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "text",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"text\")\nexample(\"text\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?text in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "mtext",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"mtext\")\nexample(\"mtext\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?mtext in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "grid",
+    "category": "Charts & graphics",
+    "description": "R function or tool used in charts & graphics. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"grid\")\nexample(\"grid\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?grid in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Sys.Date",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Sys.Date\")\nexample(\"Sys.Date\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Sys.Date in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "Sys.time",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"Sys.time\")\nexample(\"Sys.time\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?Sys.time in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "as.POSIXct",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.POSIXct\")\nexample(\"as.POSIXct\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.POSIXct in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "as.POSIXlt",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"as.POSIXlt\")\nexample(\"as.POSIXlt\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?as.POSIXlt in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "difftime",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"difftime\")\nexample(\"difftime\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?difftime in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "weekdays",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"weekdays\")\nexample(\"weekdays\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?weekdays in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "months",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"months\")\nexample(\"months\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?months in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "quarters",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"quarters\")\nexample(\"quarters\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?quarters in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "julian",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"julian\")\nexample(\"julian\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?julian in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "seq.Date",
+    "category": "Dates & times",
+    "description": "R function or tool used in dates & times. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"seq.Date\")\nexample(\"seq.Date\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?seq.Date in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "install.packages",
+    "category": "Packages & tools",
+    "description": "Install an R package from a repository.",
+    "code": "install.packages(\"ggplot2\")",
+    "output": "# Downloads and installs ggplot2 (internet required)",
+    "params": "pkgs: package names · repos: CRAN mirror",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "library",
+    "category": "Packages & tools",
+    "description": "Attach an installed package for use.",
+    "code": "library(ggplot2)",
+    "output": "# Attaches ggplot2 if installed",
+    "params": "package: installed package name",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "require",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"require\")\nexample(\"require\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?require in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "requireNamespace",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"requireNamespace\")\nexample(\"requireNamespace\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?requireNamespace in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "installed.packages",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"installed.packages\")\nexample(\"installed.packages\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?installed.packages in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "packageVersion",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"packageVersion\")\nexample(\"packageVersion\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?packageVersion in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "sessionInfo",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "sessionInfo()",
+    "output": "# Prints R version, OS and attached packages",
+    "params": "No arguments",
+    "verified": true,
+    "example_kind": "illustrative"
+  },
+  {
+    "name": "getOption",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"getOption\")\nexample(\"getOption\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?getOption in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "options",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"options\")\nexample(\"options\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?options in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "search",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"search\")\nexample(\"search\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?search in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "environment",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"environment\")\nexample(\"environment\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?environment in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "globalenv",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"globalenv\")\nexample(\"globalenv\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?globalenv in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "source",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"source\")\nexample(\"source\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?source in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "traceback",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"traceback\")\nexample(\"traceback\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?traceback in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "browser",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"browser\")\nexample(\"browser\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?browser in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "debug",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"debug\")\nexample(\"debug\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?debug in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "undebug",
+    "category": "Packages & tools",
+    "description": "R function or tool used in packages & tools. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"undebug\")\nexample(\"undebug\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?undebug in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "filter",
+    "category": "Tidyverse / ggplot2",
+    "description": "Keep rows that satisfy conditions (dplyr).",
+    "code": "help(\"filter\")\nexample(\"filter\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?filter in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "select",
+    "category": "Tidyverse / ggplot2",
+    "description": "Choose columns (dplyr).",
+    "code": "help(\"select\")\nexample(\"select\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?select in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "mutate",
+    "category": "Tidyverse / ggplot2",
+    "description": "Create or change columns (dplyr).",
+    "code": "help(\"mutate\")\nexample(\"mutate\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?mutate in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "summarise",
+    "category": "Tidyverse / ggplot2",
+    "description": "Calculate summaries, often per group (dplyr).",
+    "code": "help(\"summarise\")\nexample(\"summarise\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?summarise in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "summarize",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"summarize\")\nexample(\"summarize\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?summarize in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "group_by",
+    "category": "Tidyverse / ggplot2",
+    "description": "Define groups for dplyr operations.",
+    "code": "help(\"group_by\")\nexample(\"group_by\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?group_by in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "arrange",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"arrange\")\nexample(\"arrange\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?arrange in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "distinct",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"distinct\")\nexample(\"distinct\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?distinct in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "count",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"count\")\nexample(\"count\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?count in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "left_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "Join tables while retaining all left-table rows (dplyr).",
+    "code": "help(\"left_join\")\nexample(\"left_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?left_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "right_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"right_join\")\nexample(\"right_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?right_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "inner_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"inner_join\")\nexample(\"inner_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?inner_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "full_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"full_join\")\nexample(\"full_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?full_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "anti_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"anti_join\")\nexample(\"anti_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?anti_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "semi_join",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"semi_join\")\nexample(\"semi_join\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?semi_join in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "bind_rows",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"bind_rows\")\nexample(\"bind_rows\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?bind_rows in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "bind_cols",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"bind_cols\")\nexample(\"bind_cols\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?bind_cols in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pivot_longer",
+    "category": "Tidyverse / ggplot2",
+    "description": "Convert wide data into longer form (tidyr).",
+    "code": "help(\"pivot_longer\")\nexample(\"pivot_longer\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pivot_longer in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "pivot_wider",
+    "category": "Tidyverse / ggplot2",
+    "description": "Convert long data into wider form (tidyr).",
+    "code": "help(\"pivot_wider\")\nexample(\"pivot_wider\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?pivot_wider in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "separate",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"separate\")\nexample(\"separate\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?separate in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "unite",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"unite\")\nexample(\"unite\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?unite in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "across",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"across\")\nexample(\"across\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?across in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "case_when",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"case_when\")\nexample(\"case_when\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?case_when in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "if_else",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"if_else\")\nexample(\"if_else\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?if_else in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "coalesce",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"coalesce\")\nexample(\"coalesce\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?coalesce in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "replace_na",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"replace_na\")\nexample(\"replace_na\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?replace_na in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "drop_na",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"drop_na\")\nexample(\"drop_na\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?drop_na in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "ggplot",
+    "category": "Tidyverse / ggplot2",
+    "description": "Initialize a ggplot2 visualization.",
+    "code": "help(\"ggplot\")\nexample(\"ggplot\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?ggplot in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "aes",
+    "category": "Tidyverse / ggplot2",
+    "description": "Map data variables to plot aesthetics.",
+    "code": "help(\"aes\")\nexample(\"aes\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?aes in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_point",
+    "category": "Tidyverse / ggplot2",
+    "description": "Add scatterplot points in ggplot2.",
+    "code": "help(\"geom_point\")\nexample(\"geom_point\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_point in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_line",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_line\")\nexample(\"geom_line\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_line in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_bar",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_bar\")\nexample(\"geom_bar\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_bar in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_col",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_col\")\nexample(\"geom_col\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_col in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_histogram",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_histogram\")\nexample(\"geom_histogram\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_histogram in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_boxplot",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_boxplot\")\nexample(\"geom_boxplot\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_boxplot in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_smooth",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_smooth\")\nexample(\"geom_smooth\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_smooth in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "geom_text",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"geom_text\")\nexample(\"geom_text\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?geom_text in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "facet_wrap",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"facet_wrap\")\nexample(\"facet_wrap\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?facet_wrap in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "facet_grid",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"facet_grid\")\nexample(\"facet_grid\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?facet_grid in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "labs",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"labs\")\nexample(\"labs\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?labs in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "theme",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"theme\")\nexample(\"theme\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?theme in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "theme_minimal",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"theme_minimal\")\nexample(\"theme_minimal\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?theme_minimal in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  },
+  {
+    "name": "scale_color_manual",
+    "category": "Tidyverse / ggplot2",
+    "description": "R function or tool used in tidyverse / ggplot2. Open its R help page for exact behavior and arguments.",
+    "code": "help(\"scale_color_manual\")\nexample(\"scale_color_manual\")",
+    "output": "Opens official R documentation, then runs the examples supplied with that help topic (if available and installed).",
+    "params": "Arguments vary by function; open ?scale_color_manual in R for the full signature. · Full arguments: see the R help page. · Full arguments: see the R help page.",
+    "verified": false,
+    "example_kind": "documentation"
+  }
+]
